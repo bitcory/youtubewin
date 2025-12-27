@@ -241,7 +241,7 @@ const App = () => {
       <NeoSection id="cores" className="bg-yellow-400">
         <div className="text-center mb-12">
           <NeoBadge text="CHAPTER 1" />
-          <h2 className="text-4xl md:text-5xl font-black">사람들이 영상을 보는<br />3가지 마음 (Core)</h2>
+          <h2 className="text-4xl md:text-5xl font-black mt-6">사람들이 영상을 보는<br />3가지 마음 (Core)</h2>
           <p className="mt-4 font-bold text-2xl">이걸 모르면 당신은 계속 '작은 섬'에서만 노를 젓게 됩니다.</p>
         </div>
 
@@ -306,7 +306,7 @@ const App = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <NeoBadge text="CHAPTER 2" color="bg-cyan-500 text-white" />
-            <h2 className="text-4xl md:text-5xl font-black mb-6">조회수의 물리학<br />3단계 관문</h2>
+            <h2 className="text-4xl md:text-5xl font-black mt-6 mb-6">조회수의 물리학<br />3단계 관문</h2>
             <p className="text-2xl mb-6">유튜브는 복잡한 알고리즘이 아닙니다. 사람의 행동 패턴일 뿐입니다.</p>
 
             <div className="space-y-6">
@@ -360,7 +360,7 @@ const App = () => {
       <NeoSection id="structure" className="bg-pink-500 text-white">
         <div className="text-center mb-16">
           <NeoBadge text="CHAPTER 4~6" color="bg-white text-black" />
-          <h2 className="text-4xl md:text-6xl font-black drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">콘텐츠 아키텍처</h2>
+          <h2 className="text-4xl md:text-6xl font-black mt-6 drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">콘텐츠 아키텍처</h2>
           <p className="mt-6 text-2xl font-bold bg-black inline-block px-4 py-2 border-2 border-white">
             "당신의 문제는 영상 퀄리티가 아니라 구조적 병목입니다."
           </p>
@@ -422,7 +422,7 @@ const App = () => {
       <NeoSection id="templates" className="bg-yellow-50">
         <div className="mb-10 text-center">
           <NeoBadge text="APPENDIX" color="bg-black text-white" />
-          <h2 className="text-4xl md:text-5xl font-black">초심자용 콘텐츠 공장<br />템플릿 10개 중 BEST 5</h2>
+          <h2 className="text-4xl md:text-5xl font-black mt-6">초심자용 콘텐츠 공장<br />템플릿 10개 중 BEST 5</h2>
           <p className="mt-4 text-xl">"형태가 있으면 매번 0에서 시작하지 않습니다. 복사해서 쓰세요."</p>
         </div>
 
