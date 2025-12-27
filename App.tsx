@@ -183,8 +183,8 @@ const App = () => {
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <NeoBadge text="CONTENT MASTER CLASS" color="bg-black text-white" />
-          <h1 className="text-6xl md:text-8xl font-white mb-10 leading-tight drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
-            컨텐츠가안되는 이유
+          <h1 className="text-6xl md:text-8xl font-black mb-10 leading-tight drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
+            컨텐츠가<br />안되는 이유
           </h1>
           <p className="text-xl md:text-3xl font-bold mb-10 bg-white inline-block px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             "당신의 실패는 재능 부족이 아니다."
@@ -484,7 +484,7 @@ const App = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <LayoutTemplate className="w-16 h-16 mx-auto mb-4 text-yellow-400" />
-            <h2 className="text-4xl md:text-6xl font-black mb-6">당신은 이제<br />설계자입니다.</h2>
+            <h2 className="text-4xl md:text-6xl font-black mb-6">당신은 이제 설계자입니다.</h2>
             <p className="text-2xl md:text-3xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
               조회수는 운이 아닙니다.<br />
               당신이 설계한 <span className="text-yellow-400 font-bold underline decoration-4 underline-offset-4">구조의 결과</span>입니다.
