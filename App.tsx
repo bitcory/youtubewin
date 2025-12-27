@@ -183,7 +183,7 @@ const App = () => {
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <NeoBadge text="CONTENT MASTER CLASS" color="bg-black text-white" />
-          <h1 className="text-8xl md:text-8xl font-white mb-10 leading-tight drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
+          <h1 className="text-6xl md:text-8xl font-white mb-10 leading-tight drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
             컨텐츠가안되는 이유
           </h1>
           <p className="text-xl md:text-3xl font-bold mb-10 bg-white inline-block px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
@@ -440,7 +440,7 @@ const App = () => {
                 <ArrowRight className={`opacity-0 group-hover:opacity-100 transition-opacity ${activeTemplate.id === t.id ? 'opacity-100' : ''}`} />
               </NeoButton>
             ))}
-            <div className="mt-4 p-4 border-2 border-dashed border-black bg-gray-100 text-sm font-bold text-gray-500 text-center">
+            <div className="mt-4 p-4 border-2 border-dashed border-black bg-gray-100 text-base font-bold text-gray-500 text-center">
               + 5 More Templates in the Full Guide
             </div>
           </div>
@@ -451,16 +451,16 @@ const App = () => {
               <div className="absolute -top-3 -right-3 bg-red-500 text-white font-black px-4 py-2 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-3">
                 COPY THIS
               </div>
-              <h3 className="text-3xl font-black mb-2">{activeTemplate.title}</h3>
-              <p className="text-gray-600 font-bold mb-8 border-b-2 border-black pb-4">{activeTemplate.desc}</p>
+              <h3 className="text-4xl font-black mb-2">{activeTemplate.title}</h3>
+              <p className="text-gray-600 text-lg font-bold mb-8 border-b-2 border-black pb-4">{activeTemplate.desc}</p>
 
               <div className="space-y-4">
                 {activeTemplate.content.map((item, idx) => (
                   <div key={idx} className="flex gap-4 items-start">
-                    <div className="bg-black text-white px-2 py-1 font-mono font-bold text-sm shrink-0 mt-1">
+                    <div className="bg-black text-white px-2 py-1 font-mono font-bold text-base shrink-0 mt-1">
                       {item.time}
                     </div>
-                    <div className="text-lg font-bold bg-yellow-100 px-3 py-1 border border-black w-full">
+                    <div className="text-xl font-bold bg-yellow-100 px-3 py-1 border border-black w-full">
                       {item.text}
                     </div>
                   </div>
@@ -469,7 +469,7 @@ const App = () => {
 
               <div className="mt-10 bg-gray-100 p-4 border-2 border-black flex gap-2 items-start">
                 <Lightbulb className="shrink-0 text-yellow-500 fill-yellow-500" />
-                <p className="text-sm font-bold">
+                <p className="text-base font-bold">
                   Tip: 멘트 토씨 하나보다는 <strong>구조(흐름)</strong>를 가져가세요.
                   자신의 주제에 맞춰 단어만 바꿔끼우면 됩니다.
                 </p>
@@ -485,21 +485,21 @@ const App = () => {
           <div className="mb-8">
             <LayoutTemplate className="w-16 h-16 mx-auto mb-4 text-yellow-400" />
             <h2 className="text-4xl md:text-6xl font-black mb-6">당신은 이제<br />설계자입니다.</h2>
-            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-2xl md:text-3xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
               조회수는 운이 아닙니다.<br />
               당신이 설계한 <span className="text-yellow-400 font-bold underline decoration-4 underline-offset-4">구조의 결과</span>입니다.
             </p>
           </div>
 
           <div className="bg-gray-800 p-8 border-2 border-white max-w-xl mx-auto transform hover:-rotate-1 transition-transform duration-300">
-            <h3 className="text-xl font-bold mb-4 text-pink-400 uppercase">One Last Action</h3>
-            <p className="mb-6 font-bold">"지금 바로 당신의 지난 영상을 꺼내보세요. 어느 관문(클릭/시청/재방문)이 막혀있는지 진단하고, 딱 하나만 고쳐보세요."</p>
-            <button className="bg-white text-black font-black px-8 py-4 text-xl hover:bg-yellow-400 transition-colors w-full border-4 border-transparent hover:border-black">
+            <h3 className="text-2xl font-bold mb-4 text-pink-400 uppercase">One Last Action</h3>
+            <p className="mb-6 text-lg font-bold">"지금 바로 당신의 지난 영상을 꺼내보세요. 어느 관문(클릭/시청/재방문)이 막혀있는지 진단하고, 딱 하나만 고쳐보세요."</p>
+            <button className="bg-white text-black font-black px-8 py-4 text-2xl hover:bg-yellow-400 transition-colors w-full border-4 border-transparent hover:border-black">
               내 채널 진단하러 가기
             </button>
           </div>
 
-          <div className="mt-16 text-gray-500 font-mono text-sm">
+          <div className="mt-16 text-gray-500 font-mono text-base">
             © 2025 유튜브 컨텐츠 실패이유?. All Rights Reserved.<br />
             Designed with Neo-Brutalism Principles.
           </div>
