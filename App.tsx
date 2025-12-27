@@ -182,7 +182,7 @@ const App = () => {
         <div className="absolute bottom-10 left-10 w-24 h-24 bg-pink-500 transform rotate-45 border-4 border-black -z-0 opacity-50 md:opacity-100"></div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <NeoBadge text="CONTENT MASTER CLASS" color="bg-black" />
+          <NeoBadge text="CONTENT MASTER CLASS" color="bg-black text-white" />
           <h1 className="text-5xl md:text-8xl font-white mb-6 leading-tight drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
             컨텐츠가<br />안되는 이유
           </h1>
@@ -305,7 +305,7 @@ const App = () => {
       <NeoSection id="funnel" className="bg-white">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <NeoBadge text="CHAPTER 2" color="bg-cyan-500" />
+            <NeoBadge text="CHAPTER 2" color="bg-cyan-500 text-white" />
             <h2 className="text-4xl md:text-5xl font-black mb-6">조회수의 물리학<br />3단계 관문</h2>
             <p className="text-xl mb-6">유튜브는 복잡한 알고리즘이 아닙니다. 사람의 행동 패턴일 뿐입니다.</p>
 
@@ -421,7 +421,7 @@ const App = () => {
       {/* Templates Section */}
       <NeoSection id="templates" className="bg-yellow-50">
         <div className="mb-10 text-center">
-          <NeoBadge text="APPENDIX" color="bg-black" />
+          <NeoBadge text="APPENDIX" color="bg-black text-white" />
           <h2 className="text-4xl md:text-5xl font-black">초심자용 콘텐츠 공장<br />템플릿 10개 중 BEST 5</h2>
           <p className="mt-4">"형태가 있으면 매번 0에서 시작하지 않습니다. 복사해서 쓰세요."</p>
         </div>
