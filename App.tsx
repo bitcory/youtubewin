@@ -241,7 +241,7 @@ const App = () => {
       <NeoSection id="cores" className="bg-yellow-400">
         <div className="text-center mb-12">
           <NeoBadge text="CHAPTER 1" />
-          <h2 className="text-4xl md:text-5xl font-black mt-6">사람들이 영상을 보는<br />3가지 마음 (Core)</h2>
+          <h2 className="text-4xl md:text-5xl font-black mt-6">사람들이 영상을 보는 3가지 마음 (Core)</h2>
           <p className="mt-4 font-bold text-2xl">이걸 모르면 당신은 계속 '작은 섬'에서만 노를 젓게 됩니다.</p>
         </div>
 
@@ -422,7 +422,7 @@ const App = () => {
       <NeoSection id="templates" className="bg-yellow-50">
         <div className="mb-10 text-center">
           <NeoBadge text="APPENDIX" color="bg-black text-white" />
-          <h2 className="text-4xl md:text-5xl font-black mt-6">초심자용 콘텐츠 공장<br />템플릿 10개 중 BEST 5</h2>
+          <h2 className="text-4xl md:text-5xl font-black">초심자용 콘텐츠 공장 템플릿 10개 중 BEST 5</h2>
           <p className="mt-4 text-xl">"형태가 있으면 매번 0에서 시작하지 않습니다. 복사해서 쓰세요."</p>
         </div>
 
