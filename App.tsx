@@ -58,8 +58,8 @@ const NeoButton: React.FC<{ children?: React.ReactNode; onClick?: () => void; cl
   </button>
 );
 
-const NeoBadge = ({ text, color = "bg-pink-500" }: { text: string; color?: string }) => (
-  <span className={`inline-block px-3 py-1 text-sm font-black border-2 border-black ${color} text-white mb-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]`}>
+const NeoBadge = ({ text, color = "bg-pink-500 text-white" }: { text: string; color?: string }) => (
+  <span className={`inline-block px-3 py-1 text-sm font-black border-2 border-black ${color} mb-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]`}>
     {text}
   </span>
 );
