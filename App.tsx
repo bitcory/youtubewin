@@ -183,8 +183,8 @@ const App = () => {
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <NeoBadge text="CONTENT MASTER CLASS" color="bg-black text-white" />
-          <h1 className="text-6xl md:text-8xl font-black mb-10 leading-tight drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
-            컨텐츠가<br />안되는 이유
+          <h1 className="text-6xl md:text-8xl font-black mt-6 mb-10 leading-tight drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
+            컨텐츠가 안되는 이유
           </h1>
           <p className="text-xl md:text-3xl font-bold mb-10 bg-white inline-block px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             "당신의 실패는 재능 부족이 아니다."
