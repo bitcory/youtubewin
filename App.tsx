@@ -140,10 +140,10 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-yellow-50 text-black overflow-x-hidden selection:bg-pink-500 selection:text-white">
+    <div className="min-h-screen bg-yellow-50 text-black overflow-x-hidden selection:bg-pink-500 selection:text-white pt-16">
 
-      {/* Sticky Navbar */}
-      <nav className="sticky top-0 z-50 bg-white border-b-4 border-black px-4 py-3 shadow-md">
+      {/* Fixed Navbar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b-4 border-black px-4 py-3 shadow-md">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="font-black text-xl md:text-2xl flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
             <LayoutTemplate className="w-8 h-8 fill-yellow-400" />
