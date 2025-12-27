@@ -59,7 +59,7 @@ const NeoButton: React.FC<{ children?: React.ReactNode; onClick?: () => void; cl
 );
 
 const NeoBadge = ({ text, color = "bg-pink-500 text-white" }: { text: string; color?: string }) => (
-  <span className={`inline-block px-3 py-1 text-sm font-black border-2 border-black ${color} mb-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]`}>
+  <span className={`inline-block px-3 py-1 text-sm font-black border-2 border-black mb-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ${color}`}>
     {text}
   </span>
 );
@@ -190,7 +190,7 @@ const App = () => {
             "당신의 실패는 재능 부족이 아니다."
           </p>
           <div className="flex flex-col md:flex-row justify-center gap-4">
-            <NeoButton className="bg-pink-500 text-black" onClick={() => scrollTo('intro')}>
+            <NeoButton className="bg-pink-500 text-b" onClick={() => scrollTo('intro')}>
               진짜 이유 확인하기
             </NeoButton>
           </div>
