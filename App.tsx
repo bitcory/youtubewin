@@ -49,7 +49,7 @@ const NeoButton: React.FC<{ children?: React.ReactNode; onClick?: () => void; cl
       font-black px-6 py-3 border-4 border-black text-lg transition-all
       ${active
         ? 'bg-black text-white translate-x-[4px] translate-y-[4px] shadow-none'
-        : 'bg-white text-black hover:bg-yellow-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none'
+        : 'bg-white hover:bg-yellow-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none'
       }
       ${className}
     `}
@@ -183,14 +183,14 @@ const App = () => {
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <NeoBadge text="CONTENT MASTER CLASS" color="bg-black" />
-          <h1 className="text-5xl md:text-8xl font-black mb-6 leading-tight drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
+          <h1 className="text-5xl md:text-8xl font-white mb-6 leading-tight drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
             컨텐츠가<br />안되는 이유
           </h1>
           <p className="text-xl md:text-3xl font-bold mb-10 bg-white inline-block px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             "당신의 실패는 재능 부족이 아니다."
           </p>
           <div className="flex flex-col md:flex-row justify-center gap-4">
-            <NeoButton className="!bg-pink-500 !text-white" onClick={() => scrollTo('intro')}>
+            <NeoButton className="bg-pink-500 text-black" onClick={() => scrollTo('intro')}>
               진짜 이유 확인하기
             </NeoButton>
           </div>
@@ -360,7 +360,7 @@ const App = () => {
       <NeoSection id="structure" className="bg-pink-500 text-white">
         <div className="text-center mb-16">
           <NeoBadge text="CHAPTER 4~6" color="bg-white text-black" />
-          <h2 className="text-4xl md:text-6xl font-black text-black drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">콘텐츠 아키텍처</h2>
+          <h2 className="text-4xl md:text-6xl font-black drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">콘텐츠 아키텍처</h2>
           <p className="mt-6 text-xl font-bold bg-black inline-block px-4 py-2 border-2 border-white">
             "당신의 문제는 영상 퀄리티가 아니라 구조적 병목입니다."
           </p>
@@ -500,7 +500,7 @@ const App = () => {
           </div>
 
           <div className="mt-16 text-gray-500 font-mono text-sm">
-            © 2024 CONTENT ARCHITECT. All Rights Reserved.<br />
+            © 2025 유튜브 컨텐츠 실패이유?. All Rights Reserved.<br />
             Designed with Neo-Brutalism Principles.
           </div>
         </div>
