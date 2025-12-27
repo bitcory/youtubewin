@@ -190,7 +190,7 @@ const App = () => {
             "당신의 실패는 재능 부족이 아니다."
           </p>
           <div className="flex flex-col md:flex-row justify-center gap-4">
-            <NeoButton className="bg-pink-500 text-white" onClick={() => scrollTo('intro')}>
+            <NeoButton className="!bg-pink-500 !text-white" onClick={() => scrollTo('intro')}>
               진짜 이유 확인하기
             </NeoButton>
           </div>
@@ -360,7 +360,7 @@ const App = () => {
       <NeoSection id="structure" className="bg-pink-500 text-white">
         <div className="text-center mb-16">
           <NeoBadge text="CHAPTER 4~6" color="bg-white text-black" />
-          <h2 className="text-4xl md:text-6xl font-black drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">콘텐츠 아키텍처</h2>
+          <h2 className="text-4xl md:text-6xl font-black text-black drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">콘텐츠 아키텍처</h2>
           <p className="mt-6 text-xl font-bold bg-black inline-block px-4 py-2 border-2 border-white">
             "당신의 문제는 영상 퀄리티가 아니라 구조적 병목입니다."
           </p>
