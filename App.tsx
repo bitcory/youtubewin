@@ -35,10 +35,10 @@ const NeoCard: React.FC<{ children?: React.ReactNode; title?: string; icon?: Rea
     {(title || icon) && (
       <div className="flex items-center gap-3 mb-4 border-b-4 border-black pb-4">
         {icon && <div className="p-2 bg-black text-white rounded-none">{icon}</div>}
-        {title && <h3 className="text-xl md:text-2xl font-black uppercase">{title}</h3>}
+        {title && <h3 className="text-2xl md:text-3xl font-black uppercase">{title}</h3>}
       </div>
     )}
-    <div className="font-bold leading-relaxed">{children}</div>
+    <div className="text-lg font-bold leading-relaxed">{children}</div>
   </div>
 );
 
@@ -46,7 +46,7 @@ const NeoButton: React.FC<{ children?: React.ReactNode; onClick?: () => void; cl
   <button
     onClick={onClick}
     className={`
-      font-black px-6 py-3 border-4 border-black text-lg transition-all
+      font-black px-6 py-3 border-4 border-black text-xl transition-all
       ${active
         ? 'bg-black text-white translate-x-[4px] translate-y-[4px] shadow-none'
         : 'bg-white hover:bg-yellow-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none'
@@ -59,7 +59,7 @@ const NeoButton: React.FC<{ children?: React.ReactNode; onClick?: () => void; cl
 );
 
 const NeoBadge = ({ text, color = "bg-pink-500 text-white" }: { text: string; color?: string }) => (
-  <span className={`inline-block px-3 py-1 text-sm font-black border-2 border-black mb-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ${color}`}>
+  <span className={`inline-block px-4 py-2 text-base font-black border-2 border-black mb-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ${color}`}>
     {text}
   </span>
 );
@@ -151,11 +151,11 @@ const App = () => {
           </div>
 
           <div className="hidden md:flex gap-4">
-            <button onClick={() => scrollTo('intro')} className="font-bold hover:underline hover:text-pink-600">진실</button>
-            <button onClick={() => scrollTo('cores')} className="font-bold hover:underline hover:text-pink-600">3가지 마음</button>
-            <button onClick={() => scrollTo('funnel')} className="font-bold hover:underline hover:text-pink-600">조회수 물리학</button>
-            <button onClick={() => scrollTo('structure')} className="font-bold hover:underline hover:text-pink-600">설계도</button>
-            <button onClick={() => scrollTo('templates')} className="font-bold hover:underline hover:text-pink-600">템플릿</button>
+            <button onClick={() => scrollTo('intro')} className="text-lg font-bold hover:underline hover:text-pink-600">진실</button>
+            <button onClick={() => scrollTo('cores')} className="text-lg font-bold hover:underline hover:text-pink-600">3가지 마음</button>
+            <button onClick={() => scrollTo('funnel')} className="text-lg font-bold hover:underline hover:text-pink-600">조회수 물리학</button>
+            <button onClick={() => scrollTo('structure')} className="text-lg font-bold hover:underline hover:text-pink-600">설계도</button>
+            <button onClick={() => scrollTo('templates')} className="text-lg font-bold hover:underline hover:text-pink-600">템플릿</button>
           </div>
 
           <button className="md:hidden" onClick={toggleMenu}>
@@ -183,8 +183,8 @@ const App = () => {
 
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <NeoBadge text="CONTENT MASTER CLASS" color="bg-black text-white" />
-          <h1 className="text-5xl md:text-8xl font-white mb-6 leading-tight drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
-            컨텐츠가<br />안되는 이유
+          <h1 className="text-8xl md:text-8xl font-white mb-10 leading-tight drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
+            컨텐츠가안되는 이유
           </h1>
           <p className="text-xl md:text-3xl font-bold mb-10 bg-white inline-block px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             "당신의 실패는 재능 부족이 아니다."
@@ -202,11 +202,11 @@ const App = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-black mb-6 uppercase">프롤로그:<br />설계의 부재</h2>
-            <div className="space-y-4 text-lg">
+            <div className="space-y-4 text-xl">
               <p>밤새 기획하고, 편집하고, 업로드 버튼을 눌렀지만 조회수는 두 자리.</p>
               <p className="font-bold bg-yellow-200 inline-block px-1">"내가 재능이 없나? 운이 없나?"</p>
               <p>아닙니다. 진짜 이유는 단 하나입니다.</p>
-              <p className="text-xl font-black border-l-8 border-pink-500 pl-4 py-2 my-4">
+              <p className="text-2xl font-black border-l-8 border-pink-500 pl-4 py-2 my-4">
                 아직 '사람이 반응하는 언어'가 아니라,<br />
                 '내가 말하고 싶은 언어'로 만들고 있기 때문입니다.
               </p>
@@ -215,7 +215,7 @@ const App = () => {
           </div>
           <div className="bg-gray-100 border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative">
             <div className="absolute -top-6 -right-6 bg-yellow-400 border-4 border-black p-2 font-black rotate-12">REALITY CHECK</div>
-            <ul className="space-y-4 font-bold text-lg">
+            <ul className="space-y-4 font-bold text-xl">
               <li className="flex items-center gap-3">
                 <X className="text-red-500 w-8 h-8" strokeWidth={4} />
                 <span className="line-through decoration-4 decoration-red-500 text-gray-400">유용하면 본다</span>
@@ -242,59 +242,59 @@ const App = () => {
         <div className="text-center mb-12">
           <NeoBadge text="CHAPTER 1" />
           <h2 className="text-4xl md:text-5xl font-black">사람들이 영상을 보는<br />3가지 마음 (Core)</h2>
-          <p className="mt-4 font-bold text-xl">이걸 모르면 당신은 계속 '작은 섬'에서만 노를 젓게 됩니다.</p>
+          <p className="mt-4 font-bold text-2xl">이걸 모르면 당신은 계속 '작은 섬'에서만 노를 젓게 됩니다.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           <NeoCard title="A-CORE: 응급실" icon={<Zap />} color="bg-red-100" className="md:mt-0">
-            <div className="text-sm font-bold mb-4 text-red-600">즉시 해결 필요</div>
+            <div className="text-base font-bold mb-4 text-red-600">즉시 해결 필요</div>
             <p className="mb-4">"지금 당장 해결하지 않으면 손실 발생."</p>
-            <ul className="list-disc pl-4 space-y-2 text-sm">
+            <ul className="list-disc pl-4 space-y-2 text-base">
               <li>재미/감동 필요 없음</li>
               <li>즉시 실행 가능한 해결책</li>
               <li>바이럴보다는 <strong>강력한 신뢰</strong> 구축</li>
             </ul>
-            <div className="mt-4 bg-white border-2 border-black p-2 text-xs font-mono">
+            <div className="mt-4 bg-white border-2 border-black p-2 text-sm font-mono">
               Ex. "오늘 보고서 막힘", "광고 세팅 터짐"
             </div>
           </NeoCard>
 
           <NeoCard title="B-CORE: 헬스장" icon={<Hammer />} color="bg-blue-100" className="md:-mt-4 relative z-10">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-black text-white px-3 py-1 font-bold text-sm border-2 border-white shadow-lg">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-black text-white px-3 py-1 font-bold text-base border-2 border-white shadow-lg">
               초심자의 함정
             </div>
-            <div className="text-sm font-bold mb-4 text-blue-600">더 나아지고 싶음</div>
+            <div className="text-base font-bold mb-4 text-blue-600">더 나아지고 싶음</div>
             <p className="mb-4">"급하진 않지만 성장하고 싶음."</p>
-            <ul className="list-disc pl-4 space-y-2 text-sm">
+            <ul className="list-disc pl-4 space-y-2 text-base">
               <li>가성비 (최소 노력 최대 효과)</li>
               <li>꿀팁 3가지, BEST 5</li>
               <li><strong>함정:</strong> 관심 있는 사람만 검색함. 시장이 좁다.</li>
             </ul>
-            <div className="mt-4 bg-white border-2 border-black p-2 text-xs font-mono">
+            <div className="mt-4 bg-white border-2 border-black p-2 text-sm font-mono">
               Ex. "살 빼고 싶다", "PPT 잘 만드는 법"
             </div>
           </NeoCard>
 
           <NeoCard title="C-CORE: 영화관" icon={<Heart />} color="bg-green-100" className="md:mt-0">
-            <div className="text-sm font-bold mb-4 text-green-600">감정의 영역</div>
+            <div className="text-base font-bold mb-4 text-green-600">감정의 영역</div>
             <p className="mb-4">"관심 없던 대중까지 끌어들임."</p>
-            <ul className="list-disc pl-4 space-y-2 text-sm">
+            <ul className="list-disc pl-4 space-y-2 text-base">
               <li>웃음, 분노, 충격, 희망</li>
               <li>정보가 아닌 <strong>감정을 공유</strong></li>
               <li>바이럴은 여기서 발생</li>
             </ul>
-            <div className="mt-4 bg-white border-2 border-black p-2 text-xs font-mono">
+            <div className="mt-4 bg-white border-2 border-black p-2 text-sm font-mono">
               Ex. "허리 나가서 3개월 누웠던 썰"
             </div>
           </NeoCard>
         </div>
 
         <div className="mt-12 bg-black text-white p-6 border-4 border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)]">
-          <h3 className="text-2xl font-bold flex items-center gap-2 mb-2">
+          <h3 className="text-3xl font-bold flex items-center gap-2 mb-2">
             <Lightbulb className="text-yellow-400" />
             PRO TIP: 트로이의 목마 전략
           </h3>
-          <p className="text-lg">
+          <p className="text-xl">
             "정보(B코어)를 버리지 마세요. <strong>C코어(감정/호기심)로 문을 열고, 그 안에 B코어 정보를 숨기세요.</strong>
             데드리프트 자세(B)를 설명하지 말고, '부상 후 재기한 스토리(C)'로 시작해서 자세 팁을 주세요."
           </p>
@@ -307,7 +307,7 @@ const App = () => {
           <div>
             <NeoBadge text="CHAPTER 2" color="bg-cyan-500 text-white" />
             <h2 className="text-4xl md:text-5xl font-black mb-6">조회수의 물리학<br />3단계 관문</h2>
-            <p className="text-xl mb-6">유튜브는 복잡한 알고리즘이 아닙니다. 사람의 행동 패턴일 뿐입니다.</p>
+            <p className="text-2xl mb-6">유튜브는 복잡한 알고리즘이 아닙니다. 사람의 행동 패턴일 뿐입니다.</p>
 
             <div className="space-y-6">
               <div className="flex gap-4">
@@ -337,20 +337,20 @@ const App = () => {
           <div className="flex flex-col gap-4">
             <div className="border-4 border-black bg-pink-200 p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-center">
               <MousePointer2 className="w-12 h-12 mx-auto mb-2" />
-              <div className="text-2xl font-black">CLICK</div>
-              <div className="text-sm font-bold mt-2">입장권</div>
+              <div className="text-3xl font-black">CLICK</div>
+              <div className="text-lg font-bold mt-2">입장권</div>
             </div>
             <ArrowRight className="mx-auto w-12 h-12 rotate-90 md:rotate-0" strokeWidth={4} />
             <div className="border-4 border-black bg-purple-200 p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-center">
               <Eye className="w-12 h-12 mx-auto mb-2" />
-              <div className="text-2xl font-black">WATCH</div>
-              <div className="text-sm font-bold mt-2">생존</div>
+              <div className="text-3xl font-black">WATCH</div>
+              <div className="text-lg font-bold mt-2">생존</div>
             </div>
             <ArrowRight className="mx-auto w-12 h-12 rotate-90 md:rotate-0" strokeWidth={4} />
             <div className="border-4 border-black bg-orange-200 p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] text-center">
               <Repeat className="w-12 h-12 mx-auto mb-2" />
-              <div className="text-2xl font-black">RETURN</div>
-              <div className="text-sm font-bold mt-2">성장</div>
+              <div className="text-3xl font-black">RETURN</div>
+              <div className="text-lg font-bold mt-2">성장</div>
             </div>
           </div>
         </div>
@@ -361,7 +361,7 @@ const App = () => {
         <div className="text-center mb-16">
           <NeoBadge text="CHAPTER 4~6" color="bg-white text-black" />
           <h2 className="text-4xl md:text-6xl font-black drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">콘텐츠 아키텍처</h2>
-          <p className="mt-6 text-xl font-bold bg-black inline-block px-4 py-2 border-2 border-white">
+          <p className="mt-6 text-2xl font-bold bg-black inline-block px-4 py-2 border-2 border-white">
             "당신의 문제는 영상 퀄리티가 아니라 구조적 병목입니다."
           </p>
         </div>
@@ -381,7 +381,7 @@ const App = () => {
           {/* Card 2: Retention */}
           <NeoCard title="리텐션: 미해결 엔진" color="bg-yellow-300 text-black" icon={<Target className="text-black" />}>
             <p className="mb-4">사람은 설명이 아니라 '오픈루프(Open Loop)'에 묶입니다.</p>
-            <div className="bg-black text-white p-4 font-mono text-sm border-2 border-white mb-4">
+            <div className="bg-black text-white p-4 font-mono text-base border-2 border-white mb-4">
               <span className="text-yellow-400">0~1초:</span> 훅 (경고)<br />
               <span className="text-yellow-400">1~6초:</span> 오해 깨기 (혼란)<br />
               <span className="text-yellow-400">6~12초:</span> 해결 + 더 큰 그림자<br />
@@ -403,14 +403,14 @@ const App = () => {
           {/* Card 4: Packaging */}
           <NeoCard title="패키징: 약속의 기술" color="bg-purple-300 text-black" icon={<Box className="text-black" />}>
             <p className="mb-4">제목과 썸네일은 설명이 아닙니다. <span className="bg-yellow-400 px-1 border border-black">약속</span>입니다.</p>
-            <div className="grid grid-cols-1 gap-2 text-sm">
+            <div className="grid grid-cols-1 gap-2 text-base">
               <div className="bg-white border-2 border-black p-2">
-                <span className="block font-bold text-gray-500 text-xs">BAD (설명)</span>
+                <span className="block font-bold text-gray-500 text-sm">BAD (설명)</span>
                 "데드리프트 자세 가이드"
               </div>
               <div className="bg-white border-2 border-black p-2 relative overflow-hidden">
-                <div className="absolute top-0 right-0 bg-red-500 text-white text-[10px] px-2 font-bold">GOOD</div>
-                <span className="block font-bold text-pink-600 text-xs">GOOD (약속-미스터리)</span>
+                <div className="absolute top-0 right-0 bg-red-500 text-white text-sm px-2 font-bold">GOOD</div>
+                <span className="block font-bold text-pink-600 text-sm">GOOD (약속-미스터리)</span>
                 "왜 너만 허리가 나갈까?"
               </div>
             </div>
@@ -423,7 +423,7 @@ const App = () => {
         <div className="mb-10 text-center">
           <NeoBadge text="APPENDIX" color="bg-black text-white" />
           <h2 className="text-4xl md:text-5xl font-black">초심자용 콘텐츠 공장<br />템플릿 10개 중 BEST 5</h2>
-          <p className="mt-4">"형태가 있으면 매번 0에서 시작하지 않습니다. 복사해서 쓰세요."</p>
+          <p className="mt-4 text-xl">"형태가 있으면 매번 0에서 시작하지 않습니다. 복사해서 쓰세요."</p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-6">
